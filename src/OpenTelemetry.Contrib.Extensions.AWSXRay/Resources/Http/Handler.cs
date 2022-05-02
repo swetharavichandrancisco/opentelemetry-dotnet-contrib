@@ -16,6 +16,7 @@
 
 using System;
 using System.Net.Http;
+using System.Security.Cryptography.X509Certificates;
 
 namespace OpenTelemetry.Contrib.Extensions.AWSXRay.Resources.Http
 {
