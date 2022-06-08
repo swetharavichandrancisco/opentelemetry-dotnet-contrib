@@ -1,4 +1,4 @@
-﻿// <copyright file="TempFile.cs" company="OpenTelemetry Authors">
+// <copyright file="TempFile.cs" company="OpenTelemetry Authors">
 // Copyright The OpenTelemetry Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,7 +18,7 @@ using System;
 using System.IO;
 using System.Threading;
 
-namespace OpenTelemetry.Extensions.Docker.Tests.Resources
+namespace OpenTelemetry.Extensions.Docker.Tests
 {
     internal class TempFile : IDisposable
     {

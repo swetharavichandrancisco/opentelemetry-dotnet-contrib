@@ -1,4 +1,4 @@
-﻿// <copyright file="DockerResourceDetector.cs" company="OpenTelemetry Authors">
+// <copyright file="DockerResourceDetector.cs" company="OpenTelemetry Authors">
 // Copyright The OpenTelemetry Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -82,7 +82,7 @@ namespace OpenTelemetry.Extensions.Docker.Resources
             }
             catch (Exception ex)
             {
-                DockerExtensionsEventSource.Log.ResourceAttributesExtractException($"{nameof(DockerResourceDetector)} : Failed to extract Container id from path", ex);
+                DockerExtensionsEventSource.Log.ExtractResourceAttributesException($"{nameof(DockerResourceDetector)} : Failed to extract Container id from path", ex);
             }
 
             return null;

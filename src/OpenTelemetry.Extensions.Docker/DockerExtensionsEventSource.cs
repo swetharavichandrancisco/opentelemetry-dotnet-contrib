@@ -1,4 +1,4 @@
-﻿// <copyright file="DockerExtensionsEventSource.cs" company="OpenTelemetry Authors">
+// <copyright file="DockerExtensionsEventSource.cs" company="OpenTelemetry Authors">
 // Copyright The OpenTelemetry Authors
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -27,7 +27,7 @@ namespace OpenTelemetry.Extensions.Docker
         public static DockerExtensionsEventSource Log = new DockerExtensionsEventSource();
 
         [NonEvent]
-        public void ResourceAttributesExtractException(string format, Exception ex)
+        public void ExtractResourceAttributesException(string format, Exception ex)
         {
             if (this.IsEnabled(EventLevel.Error, (EventKeywords)(-1)))
             {
